@@ -1,6 +1,14 @@
-﻿namespace expenseTrackerPOC.Services.Auth
+﻿using expenseTrackerPOC.Data.Dtos;
+using expenseTrackerPOC.Data.RequestModels;
+using expenseTrackerPOC.Services.Auth.Interfaces;
+
+namespace expenseTrackerPOC.Services.Auth
 {
-    public class AuthService
+    public class AuthService : IAuthService
     {
+        public Task<UserDto> ValidateCredentialsAsync(LoginRequest loginRequest)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
